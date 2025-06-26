@@ -1,0 +1,59 @@
+import { Institution } from "../data/institutions";
+
+export function searchInstitutionsByName(
+  institutions: Institution[],
+  query: string
+): Institution[] {
+  if (!query.trim()) {
+    return institutions;
+  }
+
+  const searchTerm = query.toLowerCase().trim();
+
+  return institutions.filter((institution) => {
+    return institution.name.toLowerCase().includes(searchTerm);
+  });
+}
+
+export function filterInstitutionsByFocusArea(
+  institutions: Institution[],
+  focusArea: string
+): Institution[] {
+  if (!focusArea) {
+    return institutions;
+  }
+
+  return institutions.filter((institution) => {
+    return institution.focusAreas
+      .toLowerCase()
+      .includes(focusArea.toLowerCase());
+  });
+}
+
+export function getUniqueFocusAreas(institutions: Institution[]): string[] {
+  const allFocusAreas = institutions.flatMap((institution) =>
+    institution.focusAreas.split(", ").map((area) => area.trim())
+  );
+
+  return [...new Set(allFocusAreas)].sort();
+}
+
+export function applySearchAndFilter(
+  institutions: Institution[],
+  searchQuery: string,
+  focusAreaFilter: string
+): Institution[] {
+  let filtered = institutions;
+
+  // Apply search filter
+  if (searchQuery.trim()) {
+    filtered = searchInstitutionsByName(filtered, searchQuery);
+  }
+
+  // Apply focus area filter
+  if (focusAreaFilter) {
+    filtered = filterInstitutionsByFocusArea(filtered, focusAreaFilter);
+  }
+
+  return filtered;
+}
