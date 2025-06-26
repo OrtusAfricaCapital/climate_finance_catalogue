@@ -23,8 +23,8 @@ export default function NotFound() {
           Institution Not Found
         </h1>
         <p className="text-gray-600 mb-8">
-          The institution you're looking for doesn't exist or may have been
-          removed.
+          The institution you&apos;re looking for doesn&apos;t exist or may have
+          been removed.
         </p>
         <Link
           href="/"
