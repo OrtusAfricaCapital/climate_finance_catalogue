@@ -29,7 +29,7 @@ export const institutions: Institution[] = [
     currentStatus: "Operation",
     logo: "https://drive.google.com/open?id=1xJcFHat7ovY4t24uHH5G0csG70MfKvYL",
     overview:
-      "Technical assistance and preparation of projects seeking climate finance in line with Uganda's Climate Change Act",
+      "Technical assistance and preparation of projects seeking climate finance in line with Uganda&apos;s Climate Change Act",
     focusAreas: "Renewable Energy, Climate-smart Agriculture",
     targetedPrivateSector: "SMEs, Large Corporates",
     financingType: "Technical Assistance",
@@ -60,9 +60,9 @@ export const institutions: Institution[] = [
     financingType: "Concessional Loans, Grants, Equity",
     typicalTicketSize: "Variable, based on financing program",
     accessProcess:
-      "Businesses apply through UDB's structured financing programs",
+      "Businesses apply through UDB&apos;s structured financing programs",
     successStories:
-      "Funded multiple green projects supporting Uganda's emission reduction targets",
+      "Funded multiple green projects supporting Uganda&apos;s emission reduction targets",
     website: "udbl.co.ug",
     contactPerson: "Client Relations, UDB",
     position: "Client Relations, UDB",
@@ -109,7 +109,7 @@ export const institutions: Institution[] = [
     targetedPrivateSector: "Large Corporates, NGOs",
     financingType: "Concessional Loans, Grants, Technical Assistance",
     typicalTicketSize: "Variable, depends on project scope",
-    accessProcess: "Projects apply through Uganda's Ministry of Finance",
+    accessProcess: "Projects apply through Uganda&apos;s Ministry of Finance",
     successStories: "Wetland restoration benefiting 800,000 people",
     website: "https://www.greenclimate.fund/",
     contactPerson: "Ministry of Finance Climate Finance Unit",
@@ -135,7 +135,7 @@ export const institutions: Institution[] = [
       "Facilitates large-scale investments via blended finance models",
     accessProcess:
       "Works with international donors and private sector investors",
-    successStories: "Facilitated Uganda's climate finance strategy",
+    successStories: "Facilitated Uganda&apos;s climate finance strategy",
     website: "https://finance.go.ug/",
     contactPerson: "Head, Climate Finance Unit",
     position: "Senior Policy Advisor",
@@ -180,7 +180,7 @@ export const institutions: Institution[] = [
     financingType: "Grants, Blended Finance",
     typicalTicketSize: "Large-scale investment financing",
     accessProcess:
-      "Governments and NGOs apply through GEF's funding mechanisms",
+      "Governments and NGOs apply through GEF&apos;s funding mechanisms",
     successStories: "Over $26 billion mobilized globally",
     website: "https://www.thegef.org/",
     contactPerson: "Climate Change Division Head",
@@ -198,13 +198,13 @@ export const institutions: Institution[] = [
     currentStatus: "Operation",
     logo: "https://www.stanbicbank.co.ug/static_file/StandardBankGroup/filedownloads/RTS/ReporttoSociety2021-SustainableFinance.pdf",
     overview:
-      "Offers green, social, and sustainability-linked loans and bonds to support Uganda's transition to a low-carbon economy",
+      "Offers green, social, and sustainability-linked loans and bonds to support Uganda&apos;s transition to a low-carbon economy",
     focusAreas: "Renewable Energy, Green Buildings, Sustainable Agriculture",
     targetedPrivateSector: "SMEs, Corporates, Real Estate Developers",
     financingType: "Green Loans, Sustainability-Linked Bonds",
     typicalTicketSize: "Varies by sector and project",
     accessProcess:
-      "Businesses apply through Stanbic's Corporate Banking Division",
+      "Businesses apply through Stanbic&apos;s Corporate Banking Division",
     successStories:
       "Over 95 green energy providers supported; 321 client sites powered sustainably",
     website: "https://www.stanbicbank.co.ug/",
@@ -289,12 +289,12 @@ export const institutions: Institution[] = [
   {
     id: "global-green-growth-institute",
     name: "Global Green Growth Institute",
-    facilityName: "Greening Uganda's Urbanization & Industrialization",
+    facilityName: "Greening Uganda&apos;s Urbanization & Industrialization",
     yearEstablished: "2020",
     currentStatus: "Operation",
     logo: "https://gggi.org/tag/uganda/",
     overview:
-      "Supports Uganda's green growth strategy through urban planning, waste management, and green industrialization",
+      "Supports Uganda&apos;s green growth strategy through urban planning, waste management, and green industrialization",
     focusAreas: "Urban Green Growth, Waste Management, Green Jobs",
     targetedPrivateSector: "Municipalities, SMEs, Local Governments",
     financingType: "Technical Assistance, Policy Support",

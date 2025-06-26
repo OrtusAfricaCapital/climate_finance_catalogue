@@ -199,7 +199,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-600">
                 Use the search and filter options below to find exactly what
-                you're looking for.
+                you&apos;re looking for.
               </p>
             </div>
             <SearchFilter
