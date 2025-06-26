@@ -5,14 +5,23 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface InstitutionPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function InstitutionPage({ params }: InstitutionPageProps) {
-  const institution = getInstitutionById(params.id);
+export default async function InstitutionPage({
+  params,
+}: InstitutionPageProps) {
+  // Validate that params.id exists
+  const resolvedParams = await params;
+  if (!resolvedParams?.id) {
+    notFound();
+  }
 
+  const institution = getInstitutionById(resolvedParams.id);
+
+  // If institution is not found, show 404
   if (!institution) {
     notFound();
   }
