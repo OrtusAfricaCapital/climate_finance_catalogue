@@ -1,8 +1,7 @@
-"use client";
-
 import { getInstitutionById } from "../../data/institutions";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import InstitutionLogo from "../../components/InstitutionLogo";
 
 interface InstitutionPageProps {
   params: Promise<{
@@ -53,40 +52,10 @@ export default async function InstitutionPage({
           <div className="bg-gradient-to-r from-green-600 to-green-800 p-8 text-white">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
               {/* Logo */}
-              <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-4">
-                {institution.logo && institution.logo.startsWith("http") ? (
-                  <img
-                    src={institution.logo}
-                    alt={`${institution.name} logo`}
-                    className="max-w-full max-h-full object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = "none";
-                      target.nextElementSibling?.classList.remove("hidden");
-                    }}
-                  />
-                ) : null}
-                <div
-                  className={`text-gray-400 text-center ${
-                    institution.logo && institution.logo.startsWith("http")
-                      ? "hidden"
-                      : ""
-                  }`}
-                >
-                  <svg
-                    className="w-12 h-12 mx-auto mb-1"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <p className="text-xs">Logo</p>
-                </div>
-              </div>
+              <InstitutionLogo
+                logo={institution.logo}
+                institutionName={institution.name}
+              />
 
               {/* Basic Info */}
               <div className="flex-1">
