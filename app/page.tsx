@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             {/* Right Side - Search and Filter */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 text-justify">
               <SearchFilter
                 onSearch={handleSearch}
                 onFilterChange={handleFilterChange}
@@ -117,24 +117,6 @@ export default function Home() {
             </div>
           </div>
         )}
-
-        {/* Statistics */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">
-              {filteredInstitutions.length}
-            </div>
-            <div className="text-gray-600">Institutions</div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
-            <div className="text-gray-600">Operational</div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">24/7</div>
-            <div className="text-gray-600">Access</div>
-          </div>
-        </div>
 
         {/* Institutions Grid */}
         {filteredInstitutions.length > 0 ? (
