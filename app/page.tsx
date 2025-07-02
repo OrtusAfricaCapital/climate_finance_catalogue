@@ -84,39 +84,42 @@ export default function Home() {
         </div>
 
         {/* Search Results Info */}
-        {(searchQuery || focusAreaFilter) && (
-          <div className="mb-8 text-center">
-            <div className="inline-flex items-center bg-blue-50 text-blue-800 px-4 py-2 rounded-lg">
-              <svg
-                className="w-4 h-4 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+        <div className="mb-8 text-center">
+          <div className="inline-flex items-center bg-blue-50 text-blue-800 px-4 py-2 rounded-lg">
+            <svg
+              className="w-4 h-4 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <span className="font-medium">
+              {filteredInstitutions.length} institution
+              {filteredInstitutions.length !== 1 ? "s" : ""} found
+              {searchQuery && ` for "${searchQuery}"`}
+              {focusAreaFilter && ` in ${focusAreaFilter}`}
+            </span>
+            {(searchQuery || focusAreaFilter) && (
+              <button
+                onClick={handleClearAll}
+                className="ml-3 text-blue-600 hover:text-blue-800 underline text-sm"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-              <span className="font-medium">
-                {filteredInstitutions.length} institution
-                {filteredInstitutions.length !== 1 ? "s" : ""} found
-                {searchQuery && ` for "${searchQuery}"`}
-                {focusAreaFilter && ` in ${focusAreaFilter}`}
-              </span>
-              {(searchQuery || focusAreaFilter) && (
-                <button
-                  onClick={handleClearAll}
-                  className="ml-3 text-blue-600 hover:text-blue-800 underline text-sm"
-                >
-                  Clear all
-                </button>
-              )}
-            </div>
+                Clear all
+              </button>
+            )}
           </div>
-        )}
+          {/* Debug info */}
+          <div className="mt-2 text-sm text-gray-500">
+            Search query: "{searchQuery}" | Total institutions:{" "}
+            {institutions.length} | Filtered: {filteredInstitutions.length}
+          </div>
+        </div>
 
         {/* Institutions Grid */}
         {filteredInstitutions.length > 0 ? (

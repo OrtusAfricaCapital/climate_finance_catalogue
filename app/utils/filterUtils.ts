@@ -24,16 +24,23 @@ export function filterInstitutionsByFocusArea(
   }
 
   return institutions.filter((institution) => {
-    return institution.focusAreas
-      .toLowerCase()
-      .includes(focusArea.toLowerCase());
+    // Split focus areas by comma or semicolon and check if any match
+    const areas = institution.focusAreas
+      .split(/[,;]/)
+      .map((area) => area.trim().toLowerCase());
+    return areas.includes(focusArea.toLowerCase());
   });
 }
 
 export function getUniqueFocusAreas(institutions: Institution[]): string[] {
-  const allFocusAreas = institutions.flatMap((institution) =>
-    institution.focusAreas.split(", ").map((area) => area.trim())
-  );
+  const allFocusAreas = institutions.flatMap((institution) => {
+    // Handle both comma and semicolon separators, and clean up the data
+    const areas = institution.focusAreas
+      .split(/[,;]/) // Split by comma or semicolon
+      .map((area) => area.trim())
+      .filter((area) => area.length > 0 && area !== "," && area !== ";");
+    return areas;
+  });
 
   return [...new Set(allFocusAreas)].sort();
 }

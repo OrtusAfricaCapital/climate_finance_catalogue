@@ -1,4 +1,5 @@
 import { getInstitutionById } from "../../data/institutions";
+import { parseFocusAreas } from "../../utils/focusAreasUtils";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import InstitutionLogo from "../../components/InstitutionLogo";
@@ -96,14 +97,16 @@ export default async function InstitutionPage({
                     Focus Areas
                   </h2>
                   <div className="flex flex-wrap gap-2">
-                    {institution.focusAreas.split(", ").map((area, index) => (
-                      <span
-                        key={index}
-                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
-                      >
-                        {area}
-                      </span>
-                    ))}
+                    {parseFocusAreas(institution.focusAreas).map(
+                      (area, index) => (
+                        <span
+                          key={index}
+                          className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                        >
+                          {area}
+                        </span>
+                      )
+                    )}
                   </div>
                 </div>
 

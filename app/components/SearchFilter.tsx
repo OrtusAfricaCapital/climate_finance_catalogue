@@ -82,34 +82,25 @@ export default function SearchFilter({
 
       {/* Filter Section */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label
+          htmlFor="focus-area-filter"
+          className="block text-sm font-medium text-gray-700 mb-2"
+        >
           Filter by Focus Area:
         </label>
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => onFilterChange("")}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
-              currentFilter === ""
-                ? "bg-green-600 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
-          >
-            All Areas
-          </button>
+        <select
+          id="focus-area-filter"
+          value={currentFilter}
+          onChange={(e) => onFilterChange(e.target.value)}
+          className="block w-full px-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors duration-200"
+        >
+          <option value="">All Focus Areas</option>
           {focusAreas.map((area) => (
-            <button
-              key={area}
-              onClick={() => onFilterChange(area)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
-                currentFilter === area
-                  ? "bg-green-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
+            <option key={area} value={area}>
               {area}
-            </button>
+            </option>
           ))}
-        </div>
+        </select>
       </div>
     </div>
   );

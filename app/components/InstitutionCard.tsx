@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Institution } from "../data/institutions";
+import { parseFocusAreas } from "../utils/focusAreasUtils";
 
 interface InstitutionCardProps {
   institution: Institution;
@@ -106,22 +107,26 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
             Focus Areas
           </h4>
           <div className="flex flex-wrap gap-1.5">
-            {institution.focusAreas
-              .split(", ")
-              .slice(0, 3)
-              .map((area, index) => (
-                <span
-                  key={index}
-                  className="inline-block px-2 py-1 bg-green-50 text-green-700 text-xs rounded-md font-medium"
-                >
-                  {area}
-                </span>
-              ))}
-            {institution.focusAreas.split(", ").length > 3 && (
-              <span className="inline-block px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-md font-medium">
-                +{institution.focusAreas.split(", ").length - 3} more
-              </span>
-            )}
+            {(() => {
+              const areas = parseFocusAreas(institution.focusAreas);
+              return (
+                <>
+                  {areas.slice(0, 3).map((area, index) => (
+                    <span
+                      key={index}
+                      className="inline-block px-2 py-1 bg-green-50 text-green-700 text-xs rounded-md font-medium"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                  {areas.length > 3 && (
+                    <span className="inline-block px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded-md font-medium">
+                      +{areas.length - 3} more
+                    </span>
+                  )}
+                </>
+              );
+            })()}
           </div>
         </div>
 
