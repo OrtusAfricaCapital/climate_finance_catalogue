@@ -27,7 +27,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Finance TA Window",
     yearEstablished: "2025",
     currentStatus: "Operation",
-    logo: "https://drive.google.com/open?id=1xJcFHat7ovY4t24uHH5G0csG70MfKvYL",
+    logo: "https://i.postimg.cc/14YK5LLq/logooac-400x400.jpg",
     overview:
       "Technical assistance and preparation of projects seeking climate finance in line with Uganda's Climate Change Act",
     focusAreas: "Renewable Energy, Climate-smart Agriculture",
@@ -52,7 +52,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Finance Facility",
     yearEstablished: "2023",
     currentStatus: "Operation",
-    logo: "https://drive.google.com/open?id=1MH3M64QOHVaZjmgq9u-QibTvjk_iwK6L",
+    logo: "https://i.postimg.cc/7GMCxFQX/udb-logo.png",
     overview:
       "Mobilizes capital for climate-smart investments through concessional loans, grants, and blended finance.",
     focusAreas: "Renewable Energy, Green Buildings, Climate-smart Agriculture",
@@ -77,7 +77,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Finance",
     yearEstablished: "2020",
     currentStatus: "Operation",
-    logo: "https://drive.google.com/open?id=1zPIvYthhV0gxzOL2uw4SoT877sBw9ktZ",
+    logo: "https://i.postimg.cc/TpW6gVTv/ugefa-logo.png",
     overview:
       "Facilitates tailored loans and direct acceleration support for green enterprises",
     focusAreas: "Renewable Energy, Green Buildings, Clean Energy",
