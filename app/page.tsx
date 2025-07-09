@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           {/* Debug info */}
           <div className="mt-2 text-sm text-gray-500">
-            Search query: "{searchQuery}" | Total institutions:{" "}
+            Search query: &quot;{searchQuery}&quot; | Total institutions:{" "}
             {institutions.length} | Filtered: {filteredInstitutions.length}
           </div>
         </div>
