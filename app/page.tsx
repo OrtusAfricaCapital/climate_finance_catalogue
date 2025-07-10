@@ -123,7 +123,7 @@ export default function Home() {
 
         {/* Institutions Grid */}
         {filteredInstitutions.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredInstitutions.map((institution) => (
               <InstitutionCard key={institution.id} institution={institution} />
             ))}
