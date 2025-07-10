@@ -246,7 +246,7 @@ export const institutions: Institution[] = [
     facilityName: "Africa Trade & Climate Finance Facility",
     yearEstablished: "1993",
     currentStatus: "Operation",
-    logo: "https://www.afreximbank.com/afreximbank-pledges-to-help-bridge-africas-climate-finance-gap/",
+    logo: "https://i.postimg.cc/QBW3TLt5/afreximbank.png",
     overview:
       "Supports African countries in bridging the $250B climate finance gap through trade-linked green investments",
     focusAreas: "Renewable Energy, Climate Resilience, Green Trade",
@@ -272,7 +272,7 @@ export const institutions: Institution[] = [
     facilityName: "ACTIF, WAII, SEED, UGEFA",
     yearEstablished: "2016",
     currentStatus: "Operation",
-    logo: "https://findingxy.com/",
+    logo: "https://i.postimg.cc/dDSc4tyd/finding-xy-logo.jpg",
     overview:
       "Innovation hub supporting climate-tech, agri-SMEs, and women-led enterprises through blended finance and incubation",
     focusAreas: "Climate Technologies, Green SMEs, Women in Agriculture",
@@ -294,7 +294,7 @@ export const institutions: Institution[] = [
     facilityName: "Greening Uganda’s Urbanization & Industrialization",
     yearEstablished: "2020",
     currentStatus: "Operation",
-    logo: "https://gggi.org/tag/uganda/",
+    logo: "https://i.postimg.cc/bdLv3Xxb/1-31-GGGI-Logo-New-Green.png",
     overview:
       "Supports Uganda’s green growth strategy through urban planning, waste management, and green industrialization",
     focusAreas: "Urban Green Growth, Waste Management, Green Jobs",
@@ -316,7 +316,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate-Smart Agriculture & Energy Access",
     yearEstablished: "1964",
     currentStatus: "Operation",
-    logo: "https://www.giz.de/en/worldwide/310.html",
+    logo: "https://i.postimg.cc/34ccxxMm/giz.jpg",
     overview:
       "Implements BMZ-funded programs on rural development, energy access, and climate resilience",
     focusAreas: "Climate-smart Agriculture, Renewable Energy, Governance",
@@ -339,7 +339,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate & Livelihoods Program",
     yearEstablished: "2007",
     currentStatus: "Operation",
-    logo: "http://www.emliuganda.org",
+    logo: "https://i.postimg.cc/7bPzxnX3/emli-logo.png",
     overview:
       "Community-based organization promoting climate adaptation, environmental governance, and sustainable livelihoods",
     focusAreas: "Climate Change, Ecosystem Management, Waste",
@@ -361,7 +361,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Policy & Budget Advocacy",
     yearEstablished: "2000",
     currentStatus: "Operation",
-    logo: "https://www.acode-u.org/",
+    logo: "https://i.postimg.cc/14g9cgzx/ACODE-logo.png",
     overview:
       "Think tank conducting research and advocacy on climate finance, governance, and environmental policy",
     focusAreas: "Climate Finance, Governance, Policy Reform",
@@ -383,7 +383,7 @@ export const institutions: Institution[] = [
     facilityName: "E3 Low Carbon Economy Fund I",
     yearEstablished: "2023",
     currentStatus: "Operational",
-    logo: "https://www.e3-cap.com/",
+    logo: "https://i.postimg.cc/755cjzpD/energy-access-ventures-logo.jpg",
     overview:
       "Early-stage VC investing in African startups focused on low-carbon solutions.",
     focusAreas: "Renewable Energy, AgTech, E-Mobility, Circular Economy",

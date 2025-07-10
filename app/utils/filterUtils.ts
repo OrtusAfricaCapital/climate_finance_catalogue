@@ -10,9 +10,20 @@ export function searchInstitutionsByName(
 
   const searchTerm = query.toLowerCase().trim();
 
-  return institutions.filter((institution) => {
-    return institution.name.toLowerCase().includes(searchTerm);
+  // Debug logging
+  console.log("Search term:", searchTerm);
+  console.log("Total institutions:", institutions.length);
+
+  const results = institutions.filter((institution) => {
+    const nameMatch = institution.name.toLowerCase().includes(searchTerm);
+    if (nameMatch) {
+      console.log("Found match:", institution.name);
+    }
+    return nameMatch;
   });
+
+  console.log("Search results:", results.length);
+  return results;
 }
 
 export function filterInstitutionsByFocusArea(
