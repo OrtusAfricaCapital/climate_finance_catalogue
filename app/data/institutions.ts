@@ -126,7 +126,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Finance",
     yearEstablished: "2023",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/kVwN35KF/mof.jpg'",
+    logo: "https://i.postimg.cc/kVwN35KF/mof.jpg",
     overview:
       "Works to attract climate finance through innovative instruments like green bonds and carbon markets",
     focusAreas: "Renewable Energy, Climate-smart Agriculture, Circular Economy",
