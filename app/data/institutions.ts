@@ -803,7 +803,7 @@ export const institutions: Institution[] = [
     facilityName: "Wangara Impact Fund",
     yearEstablished: "2019",
     currentStatus: "Operational",
-    logo: "https://wangaragreenventures.com/",
+    logo: "https://i.postimg.cc/jw9m4SCX/wangara-green.png",
     overview:
       "Invests $50K–$500K in green SGBs in Ghana with patient capital and technical assistance",
     focusAreas: "Renewable Energy; Climate-smart Agriculture; Waste Mgmt",
@@ -848,7 +848,7 @@ export const institutions: Institution[] = [
     facilityName: "ClimaFii Alliance",
     yearEstablished: "2000",
     currentStatus: "Operational",
-    logo: "https://shellfoundation.org/",
+    logo: "https://i.postimg.cc/QVQJbMBd/shell-foundation.png",
     overview:
       "Supports microenterprises in Sub-Saharan Africa and India with clean energy solutions and inclusive finance",
     focusAreas: "Clean Energy; Climate Resilience",
@@ -870,7 +870,7 @@ export const institutions: Institution[] = [
     facilityName: "Harambeans Venture Network",
     yearEstablished: "2008",
     currentStatus: "Operational",
-    logo: "https://www.harambeans.com/",
+    logo: "https://i.postimg.cc/jCCrnCZB/harambeans.png",
     overview:
       "Alliance of African innovators supporting tech-enabled ventures with climate and social impact",
     focusAreas: "CleanTech; AgTech; Mobility",
@@ -892,7 +892,7 @@ export const institutions: Institution[] = [
     facilityName: "Maroc Numeric Fund II",
     yearEstablished: "2009",
     currentStatus: "Operational",
-    logo: "https://mnf.ma/en/",
+    logo: "https://i.postimg.cc/SXGz9nTB/mnf-ventures-logo.png",
     overview:
       "VC fund investing in Moroccan and diaspora-led tech startups including EnergyTech and CleanTech",
     focusAreas: "EnergyTech; Clean Mobility",
@@ -914,7 +914,7 @@ export const institutions: Institution[] = [
     facilityName: "Blue Haven Ventures",
     yearEstablished: "2012",
     currentStatus: "Operational",
-    logo: "https://www.bluehaveninitiative.com/",
+    logo: "https://i.postimg.cc/sv9ys5MC/haven.png",
     overview:
       "Family office investing across asset classes for social and environmental impact",
     focusAreas: "Renewable Energy; AgTech; Climate Finance",
@@ -936,7 +936,7 @@ export const institutions: Institution[] = [
     facilityName: "LoftyInc Alpha Fund",
     yearEstablished: "2012",
     currentStatus: "Operational",
-    logo: "https://loftyinc.vc/",
+    logo: "https://i.postimg.cc/qh3qLgjB/loftyincvc-logo.png",
     overview:
       "VC investing in climate tech, logistics, and AI-driven solutions in Africa",
     focusAreas: "Climate Tech; Logistics; AI",
@@ -958,7 +958,7 @@ export const institutions: Institution[] = [
     facilityName: "Impact-First Investment Fund",
     yearEstablished: "1994",
     currentStatus: "Operational",
-    logo: "https://www.globalpartnerships.org/",
+    logo: "https://i.postimg.cc/0MD5SFyb/global-P.png",
     overview:
       "Invests in clean energy, health, and livelihoods for underserved communities",
     focusAreas: "Clean Energy; Solar; Inclusive Finance",
@@ -980,7 +980,7 @@ export const institutions: Institution[] = [
     facilityName: "Triodos Energy Transition Fund",
     yearEstablished: "1980",
     currentStatus: "Operational",
-    logo: "https://www.triodos.com/en/climate-strategy",
+    logo: "https://i.postimg.cc/N9621psf/triodos.png",
     overview:
       "European bank financing renewable energy, nature-based solutions, and sustainable infrastructure",
     focusAreas: "Renewable Energy; Nature-based Solutions",
@@ -1002,7 +1002,7 @@ export const institutions: Institution[] = [
     facilityName: "I&P Afrique Entrepreneurs",
     yearEstablished: "2002",
     currentStatus: "Operational",
-    logo: "https://www.ietp.com/",
+    logo: "https://i.postimg.cc/WF8bNKpr/investisseurs.png",
     overview:
       "Supports African SMEs with blended finance and technical assistance",
     focusAreas: "Climate Resilience; AgTech; Circular Economy",
@@ -1024,7 +1024,7 @@ export const institutions: Institution[] = [
     facilityName: "OP Finnfund Global Impact Fund I",
     yearEstablished: "1980",
     currentStatus: "Operational",
-    logo: "https://www.finnfund.fi/",
+    logo: "https://i.postimg.cc/MfXchx0X/finnfund.png",
     overview:
       "Finnish development financier investing in renewable energy, sustainable forestry, agriculture, and financial institutions in emerging markets.",
     focusAreas: "Renewable Energy; Forestry; Agriculture; Climate Finance",
@@ -1046,7 +1046,7 @@ export const institutions: Institution[] = [
     facilityName: "Sustainable Crowdfunding Platform",
     yearEstablished: "2013",
     currentStatus: "Operational",
-    logo: "https://www.lendahand.com/",
+    logo: "https://i.postimg.cc/ZqNvy5Q9/lendahand.png",
     overview:
       "Dutch impact investing platform enabling retail investors to fund clean energy and inclusive finance projects in emerging markets.",
     focusAreas: "Off-grid Solar; Clean Energy Access",
@@ -1068,7 +1068,7 @@ export const institutions: Institution[] = [
     facilityName: "SocialAlpha Investment Fund (SAIF)",
     yearEstablished: "2008",
     currentStatus: "Operational",
-    logo: "https://www.alphamundigroup.com/",
+    logo: "https://i.postimg.cc/G4RLDdBY/alphamund.png",
     overview:
       "Impact investor financing SMEs in Africa and Latin America in renewable energy, sustainable food, and financial inclusion.",
     focusAreas: "Renewable Energy; AgTech; Financial Inclusion",
@@ -1090,7 +1090,7 @@ export const institutions: Institution[] = [
     facilityName: "East Africa Impact Fund",
     yearEstablished: "2006",
     currentStatus: "Operational",
-    logo: "https://www.dobequity.nl/",
+    logo: "https://i.postimg.cc/Zvkthxp3/dob-equity.png",
     overview:
       "Family-backed impact fund investing in sustainable food, water, and energy ventures in East Africa.",
     focusAreas: "Clean Water; Renewable Energy; AgTech",
