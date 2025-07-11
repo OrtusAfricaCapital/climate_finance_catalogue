@@ -11,11 +11,18 @@ export function searchInstitutionsByFinancingType(
   const searchTerm = query.toLowerCase().trim();
 
   return institutions.filter((institution) => {
-    // Normalize the financing type string
-    const financingType = institution.financingType.toLowerCase();
+    // Search across multiple relevant fields
+    const searchableText = [
+      institution.name.toLowerCase(),
+      institution.facilityName.toLowerCase(),
+      institution.financingType.toLowerCase(),
+      institution.focusAreas.toLowerCase(),
+      institution.overview.toLowerCase(),
+      institution.targetedPrivateSector.toLowerCase(),
+    ].join(" ");
 
-    // Check if the search term is contained within the financing type
-    return financingType.includes(searchTerm);
+    // Check if the search term is contained within any of the searchable fields
+    return searchableText.includes(searchTerm);
   });
 }
 
@@ -36,6 +43,38 @@ export function filterInstitutionsByFocusArea(
   });
 }
 
+export function sortInstitutions(
+  institutions: Institution[],
+  sortBy: string
+): Institution[] {
+  if (!sortBy) {
+    return institutions;
+  }
+
+  const sorted = [...institutions];
+
+  switch (sortBy) {
+    case "name":
+      return sorted.sort((a, b) => a.name.localeCompare(b.name));
+    case "name-desc":
+      return sorted.sort((a, b) => b.name.localeCompare(a.name));
+    case "year":
+      return sorted.sort(
+        (a, b) => parseInt(a.yearEstablished) - parseInt(b.yearEstablished)
+      );
+    case "year-desc":
+      return sorted.sort(
+        (a, b) => parseInt(b.yearEstablished) - parseInt(a.yearEstablished)
+      );
+    case "financing":
+      return sorted.sort((a, b) =>
+        a.financingType.localeCompare(b.financingType)
+      );
+    default:
+      return sorted;
+  }
+}
+
 export function getUniqueFocusAreas(institutions: Institution[]): string[] {
   const allFocusAreas = institutions.flatMap((institution) => {
     // Handle both comma and semicolon separators, and clean up the data
@@ -52,7 +91,8 @@ export function getUniqueFocusAreas(institutions: Institution[]): string[] {
 export function applySearchAndFilter(
   institutions: Institution[],
   searchQuery: string,
-  focusAreaFilter: string
+  focusAreaFilter: string,
+  sortBy: string = ""
 ): Institution[] {
   let filtered = institutions;
 
@@ -64,6 +104,11 @@ export function applySearchAndFilter(
   // Apply focus area filter
   if (focusAreaFilter) {
     filtered = filterInstitutionsByFocusArea(filtered, focusAreaFilter);
+  }
+
+  // Apply sorting
+  if (sortBy) {
+    filtered = sortInstitutions(filtered, sortBy);
   }
 
   return filtered;

@@ -4,18 +4,21 @@ import { useState } from "react";
 import { institutions } from "./data/institutions";
 import InstitutionCard from "./components/InstitutionCard";
 import SearchFilter from "./components/SearchFilter";
+import Footer from "./components/Footer";
 import { applySearchAndFilter, getUniqueFocusAreas } from "./utils/filterUtils";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [focusAreaFilter, setFocusAreaFilter] = useState("");
+  const [sortBy, setSortBy] = useState("");
   const [uniqueFocusAreas] = useState(getUniqueFocusAreas(institutions));
 
   // Calculate filtered results directly without storing in state
   const filteredInstitutions = applySearchAndFilter(
     institutions,
     searchQuery,
-    focusAreaFilter
+    focusAreaFilter,
+    sortBy
   );
 
   const handleSearch = (query: string) => {
@@ -26,9 +29,14 @@ export default function Home() {
     setFocusAreaFilter(focusArea);
   };
 
+  const handleSortChange = (sortBy: string) => {
+    setSortBy(sortBy);
+  };
+
   const handleClearAll = () => {
     setSearchQuery("");
     setFocusAreaFilter("");
+    setSortBy("");
   };
 
   return (
@@ -116,8 +124,9 @@ export default function Home() {
               {filteredInstitutions.length !== 1 ? "s" : ""} found
               {searchQuery && ` for "${searchQuery}"`}
               {focusAreaFilter && ` in ${focusAreaFilter}`}
+              {sortBy && ` (sorted by ${sortBy})`}
             </span>
-            {(searchQuery || focusAreaFilter) && (
+            {(searchQuery || focusAreaFilter || sortBy) && (
               <button
                 onClick={handleClearAll}
                 className="ml-3 text-blue-600 hover:text-blue-800 underline text-sm"
@@ -181,22 +190,20 @@ export default function Home() {
             </div>
           </div>
         )}
-
-        {/* Bottom Search and Filter */}
-        {filteredInstitutions.length > 0 && (
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <div className="text-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Need to refine your search?
-              </h3>
-              <p className="text-gray-600">
-                Use the search and filter options above to find specific
-                institutions.
-              </p>
-            </div>
-          </div>
-        )}
       </main>
+
+      {/* Footer */}
+      <Footer
+        onSearch={handleSearch}
+        onFilterChange={handleFilterChange}
+        onSortChange={handleSortChange}
+        focusAreas={uniqueFocusAreas}
+        currentFilter={focusAreaFilter}
+        currentSort={sortBy}
+        searchQuery={searchQuery}
+        onClearAll={handleClearAll}
+        totalInstitutions={institutions.length}
+      />
     </div>
   );
 }
