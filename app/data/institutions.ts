@@ -126,7 +126,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Finance",
     yearEstablished: "2023",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/kVwN35KF/mof.jpg",
+    logo: "https://i.postimg.cc/mzCDKsry/mof.png",
     overview:
       "Works to attract climate finance through innovative instruments like green bonds and carbon markets",
     focusAreas: "Renewable Energy, Climate-smart Agriculture, Circular Economy",
@@ -176,7 +176,7 @@ export const institutions: Institution[] = [
     facilityName: "Africa Climate Change Fund",
     yearEstablished: "2014",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/DS0ndj5v/afdb.webp",
+    logo: "https://i.postimg.cc/Tp8jydmf/afdb-logo.png",
     overview: "Provides technical assistance and funding for climate projects.",
     focusAreas: "Renewable Energy, Climate-smart Agriculture",
     targetedPrivateSector: "SMEs, Large Corporates, NGO",
@@ -246,7 +246,7 @@ export const institutions: Institution[] = [
     facilityName: "Africa Trade & Climate Finance Facility",
     yearEstablished: "1993",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/QBW3TLt5/afreximbank.png",
+    logo: "https://i.postimg.cc/XBn2t9WN/afreximbank.png",
     overview:
       "Supports African countries in bridging the $250B climate finance gap through trade-linked green investments",
     focusAreas: "Renewable Energy, Climate Resilience, Green Trade",
@@ -272,7 +272,7 @@ export const institutions: Institution[] = [
     facilityName: "ACTIF, WAII, SEED, UGEFA",
     yearEstablished: "2016",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/dDSc4tyd/finding-xy-logo.jpg",
+    logo: "https://i.postimg.cc/SjzNK8c1/finding-xy-logo-final.png",
     overview:
       "Innovation hub supporting climate-tech, agri-SMEs, and women-led enterprises through blended finance and incubation",
     focusAreas: "Climate Technologies, Green SMEs, Women in Agriculture",
@@ -316,7 +316,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate-Smart Agriculture & Energy Access",
     yearEstablished: "1964",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/34ccxxMm/giz.jpg",
+    logo: "https://i.postimg.cc/sGz8ytYr/giz-final.png",
     overview:
       "Implements BMZ-funded programs on rural development, energy access, and climate resilience",
     focusAreas: "Climate-smart Agriculture, Renewable Energy, Governance",
@@ -361,7 +361,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Policy & Budget Advocacy",
     yearEstablished: "2000",
     currentStatus: "Operation",
-    logo: "https://i.postimg.cc/14g9cgzx/ACODE-logo.png",
+    logo: "https://i.postimg.cc/6477WmtM/ACODE-final.png",
     overview:
       "Think tank conducting research and advocacy on climate finance, governance, and environmental policy",
     focusAreas: "Climate Finance, Governance, Policy Reform",
@@ -406,7 +406,7 @@ export const institutions: Institution[] = [
     facilityName: "Off-Grid Energy Access Fund",
     yearEstablished: "2017",
     currentStatus: "Operational",
-    logo: "https://www.all-on.com/",
+    logo: "https://i.postimg.cc/jDxsvfNc/all-on-energy-logo.png",
     overview:
       "Provides funding and TA to off-grid energy companies in Nigeria and underserved communities.",
     focusAreas: "Solar, Renewable Energy",
@@ -428,7 +428,7 @@ export const institutions: Institution[] = [
     facilityName: "Climate Venture Building Fund",
     yearEstablished: "2012",
     currentStatus: "Operational",
-    logo: "https://www.persistent.energy/",
+    logo: "https://i.postimg.cc/hJK7LhPR/persistent-logo.png",
     overview:
       "Offers capital and operational support to early-stage climate tech companies in Africa.",
     focusAreas: "Renewable Energy, Solar, Climate Tech",
@@ -450,7 +450,7 @@ export const institutions: Institution[] = [
     facilityName: "Electrification Financing",
     yearEstablished: "2015",
     currentStatus: "Operational",
-    logo: "http://electrifi.eu/",
+    logo: "https://i.postimg.cc/PNMfDKvJ/edfi-final.png",
     overview:
       "Provides catalytic capital to developers of off-grid and grid-connected electricity in emerging markets.",
     focusAreas: "Renewable Energy, Solar, Energy Access",
@@ -473,7 +473,7 @@ export const institutions: Institution[] = [
     facilityName: "Clean Energy Investment Fund",
     yearEstablished: "1997",
     currentStatus: "Operational",
-    logo: "https://norfund.no/",
+    logo: "https://i.postimg.cc/5Yt88j9k/Norfund-logo.png",
     overview:
       "Norwegian investment fund offering equity and debt for renewable energy and financial inclusion.",
     focusAreas: "Renewable Energy, Energy",
@@ -1112,7 +1112,7 @@ export const institutions: Institution[] = [
     facilityName: "SIMA Funds",
     yearEstablished: "2015",
     currentStatus: "Operational",
-    logo: "https://i.postimg.cc/svkRyv2R/sima.jpg",
+    logo: "https://i.postimg.cc/gLrkWS3N/sima-final.png",
     overview:
       "Impact-first asset manager investing in off-grid solar, affordable housing, and financial inclusion across Africa and Asia.",
     focusAreas: "Solar; Financial Inclusion; Affordable Housing",
