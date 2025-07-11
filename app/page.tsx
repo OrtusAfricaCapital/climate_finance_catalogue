@@ -56,23 +56,40 @@ export default function Home() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Introduction Section with Search */}
-        <div className="mb-12">
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
-            {/* Left Side - Title and Description */}
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 text-left">
-                Discover Climate Finance Opportunities
-              </h2>
-              <p className="text-lg text-gray-600 text-left">
-                Explore a comprehensive catalogue of climate finance
-                institutions, facilities, and opportunities available to the
-                private sector in Uganda. Find the right partner for your green
-                investment needs.
-              </p>
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl shadow-md p-8 mb-10">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            {/* Left: Icon + Text */}
+            <div className="flex-1 flex items-start gap-4">
+              {/* Icon */}
+              <div className="hidden md:block">
+                <svg
+                  className="w-16 h-16 text-green-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 48 48"
+                >
+                  <circle cx="24" cy="24" r="22" strokeWidth="3" />
+                  <path d="M16 32c2-8 14-8 16 0" strokeWidth="3" />
+                  <circle cx="24" cy="20" r="4" fill="currentColor" />
+                </svg>
+              </div>
+              {/* Text */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+                  Discover{" "}
+                  <span className="text-green-600">Climate Finance</span>{" "}
+                  Opportunities
+                </h2>
+                <p className="text-lg text-gray-600">
+                  Explore a comprehensive catalogue of climate finance
+                  institutions, facilities, and opportunities available to the
+                  private sector in Uganda. Find the right partner for your
+                  green investment needs.
+                </p>
+              </div>
             </div>
-
-            {/* Right Side - Search and Filter */}
-            <div className="w-full lg:w-1/2 text-justify">
+            {/* Right: Search/Filter */}
+            <div className="w-full md:w-[420px] bg-white rounded-xl shadow p-6 flex flex-col gap-4 border border-green-100">
               <SearchFilter
                 onSearch={handleSearch}
                 onFilterChange={handleFilterChange}
