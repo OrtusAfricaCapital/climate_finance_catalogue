@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import SearchFilter from "./SearchFilter";
 
 interface StickySearchProps {
   onSearch: (query: string) => void;
