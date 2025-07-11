@@ -1200,7 +1200,7 @@ export const institutions: Institution[] = [
     facilityName: "Partech Impact Fund",
     yearEstablished: "2023",
     currentStatus: "Operational",
-    logo: "https://i.postimg.cc/5XzbF8r0/partech-logo.jpg",
+    logo: "https://i.postimg.cc/nMvtsthB/partech-logo-final.png",
     overview:
       "Growth-stage impact fund investing in climate tech and inclusive innovation across Europe and Africa.",
     focusAreas: "Climate Tech; Agri-food; Circular Economy",
