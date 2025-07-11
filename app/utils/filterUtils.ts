@@ -1,6 +1,6 @@
 import { Institution } from "../data/institutions";
 
-export function searchInstitutionsByName(
+export function searchInstitutionsByFinancingType(
   institutions: Institution[],
   query: string
 ): Institution[] {
@@ -10,20 +10,13 @@ export function searchInstitutionsByName(
 
   const searchTerm = query.toLowerCase().trim();
 
-  // Debug logging
-  console.log("Search term:", searchTerm);
-  console.log("Total institutions:", institutions.length);
+  return institutions.filter((institution) => {
+    // Normalize the financing type string
+    const financingType = institution.financingType.toLowerCase();
 
-  const results = institutions.filter((institution) => {
-    const nameMatch = institution.name.toLowerCase().includes(searchTerm);
-    if (nameMatch) {
-      console.log("Found match:", institution.name);
-    }
-    return nameMatch;
+    // Check if the search term is contained within the financing type
+    return financingType.includes(searchTerm);
   });
-
-  console.log("Search results:", results.length);
-  return results;
 }
 
 export function filterInstitutionsByFocusArea(
@@ -65,7 +58,7 @@ export function applySearchAndFilter(
 
   // Apply search filter
   if (searchQuery.trim()) {
-    filtered = searchInstitutionsByName(filtered, searchQuery);
+    filtered = searchInstitutionsByFinancingType(filtered, searchQuery);
   }
 
   // Apply focus area filter
