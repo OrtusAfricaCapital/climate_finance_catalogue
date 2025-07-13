@@ -107,12 +107,13 @@ export default function PrivacyPolicy() {
                         1. Introduction
                       </h2>
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                        The Uganda Climate Finance Catalogue ("we," "our," or
-                        "us") is committed to protecting your privacy. This
-                        Privacy Policy explains how we collect, use, disclose,
-                        and safeguard your information when you visit our
-                        website and use our services. This policy applies to all
-                        users of the Uganda Climate Finance Catalogue platform.
+                        The Uganda Climate Finance Catalogue (&ldquo;we,&rdquo;
+                        &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to
+                        protecting your privacy. This Privacy Policy explains
+                        how we collect, use, disclose, and safeguard your
+                        information when you visit our website and use our
+                        services. This policy applies to all users of the Uganda
+                        Climate Finance Catalogue platform.
                       </p>
                     </div>
                   </div>
@@ -614,7 +615,7 @@ export default function PrivacyPolicy() {
                     </div>
                     <div className="flex-1">
                       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-                        9. Children's Privacy
+                        9. Children&apos;s Privacy
                       </h2>
                       <div className="bg-yellow-50 rounded-lg p-4 sm:p-6 border border-yellow-100">
                         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
@@ -694,7 +695,7 @@ export default function PrivacyPolicy() {
                           reflect changes in our practices or applicable laws.
                           We will notify you of any material changes by posting
                           the updated policy on our website and updating the
-                          "Last updated" date.
+                          &ldquo;Last updated&rdquo; date.
                         </p>
                       </div>
                     </div>
