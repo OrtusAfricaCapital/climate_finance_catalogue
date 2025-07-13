@@ -32,12 +32,12 @@ export default function SearchFilter({
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-4">
+    <div className="w-full max-w-4xl mx-auto space-y-3 sm:space-y-4">
       {/* Search Section */}
       <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <svg
-            className="h-5 w-5 text-gray-400"
+            className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ export default function SearchFilter({
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search by name or financing type..."
-          className="block w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors duration-200"
+          className="block w-full pl-8 sm:pl-10 pr-10 sm:pr-12 py-2.5 sm:py-3 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors duration-200 text-sm sm:text-base"
         />
         {searchQuery && (
           <button
@@ -64,7 +64,7 @@ export default function SearchFilter({
             className="absolute inset-y-0 right-0 pr-3 flex items-center"
           >
             <svg
-              className="h-5 w-5 text-gray-400 hover:text-gray-600 transition-colors duration-200"
+              className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 hover:text-gray-600 transition-colors duration-200"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ export default function SearchFilter({
       <div>
         <label
           htmlFor="focus-area-filter"
-          className="block text-sm font-medium text-gray-700 mb-2"
+          className="block text-xs sm:text-sm font-medium text-gray-700 mb-1.5 sm:mb-2"
         >
           Filter by Focus Area:
         </label>
@@ -92,7 +92,7 @@ export default function SearchFilter({
           id="focus-area-filter"
           value={currentFilter}
           onChange={(e) => onFilterChange(e.target.value)}
-          className="block w-full px-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors duration-200"
+          className="block w-full px-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors duration-200 text-sm sm:text-base"
         >
           <option value="">All Focus Areas</option>
           {focusAreas.map((area) => (

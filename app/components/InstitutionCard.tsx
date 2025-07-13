@@ -14,7 +14,7 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
       {/* Header with Logo and Status */}
       <div className="relative">
         {/* Logo Section - Made smaller */}
-        <div className="h-24 bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-4 relative overflow-hidden">
+        <div className="h-20 sm:h-24 bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center p-3 sm:p-4 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
             <svg
@@ -45,7 +45,7 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
             <img
               src={institution.logo}
               alt={`${institution.name} logo`}
-              className="max-h-16 max-w-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
+              className="max-h-12 sm:max-h-16 max-w-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = "none";
@@ -60,8 +60,12 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
                 : ""
             }`}
           >
-            <div className="w-12 h-12 mx-auto mb-1 bg-white rounded-lg flex items-center justify-center shadow-sm">
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <div className="w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-1 bg-white rounded-lg flex items-center justify-center shadow-sm">
+              <svg
+                className="w-4 h-4 sm:w-6 sm:h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fillRule="evenodd"
                   d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
@@ -74,36 +78,36 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
         </div>
 
         {/* Status Badge - Made smaller */}
-        <div className="absolute top-2 right-2">
-          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-            <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-1"></span>
+        <div className="absolute top-1.5 sm:top-2 right-1.5 sm:right-2">
+          <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+            <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-green-400 rounded-full mr-1"></span>
             {institution.currentStatus}
           </span>
         </div>
 
         {/* Year Badge - Made smaller */}
-        <div className="absolute top-2 left-2">
-          <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+        <div className="absolute top-1.5 sm:top-2 left-1.5 sm:left-2">
+          <span className="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
             Est. {institution.yearEstablished}
           </span>
         </div>
       </div>
 
       {/* Content Section - Reduced padding */}
-      <div className="p-4">
+      <div className="p-3 sm:p-4">
         {/* Institution Name - Smaller font */}
-        <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-green-700 transition-colors duration-200">
+        <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1.5 sm:mb-2 line-clamp-2 group-hover:text-green-700 transition-colors duration-200">
           {institution.name}
         </h3>
 
         {/* Facility Name - Smaller and more subtle */}
-        <p className="text-xs text-gray-500 mb-3 italic">
+        <p className="text-xs text-gray-500 mb-2 sm:mb-3 italic">
           {institution.facilityName}
         </p>
 
         {/* Focus Areas - More compact */}
-        <div className="mb-3">
-          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+        <div className="mb-2 sm:mb-3">
+          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 sm:mb-1.5">
             Focus Areas
           </h4>
           <div className="flex flex-wrap gap-1">
@@ -114,13 +118,13 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
                   {areas.slice(0, 2).map((area, index) => (
                     <span
                       key={index}
-                      className="inline-block px-1.5 py-0.5 bg-green-50 text-green-700 text-xs rounded font-medium"
+                      className="inline-block px-1 sm:px-1.5 py-0.5 bg-green-50 text-green-700 text-xs rounded font-medium"
                     >
                       {area}
                     </span>
                   ))}
                   {areas.length > 2 && (
-                    <span className="inline-block px-1.5 py-0.5 bg-gray-50 text-gray-600 text-xs rounded font-medium">
+                    <span className="inline-block px-1 sm:px-1.5 py-0.5 bg-gray-50 text-gray-600 text-xs rounded font-medium">
                       +{areas.length - 2} more
                     </span>
                   )}
@@ -131,8 +135,8 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
         </div>
 
         {/* Targeted Private Sector - More compact */}
-        <div className="mb-4">
-          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+        <div className="mb-3 sm:mb-4">
+          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 sm:mb-1.5">
             Targeted Sector
           </h4>
           <div className="flex flex-wrap gap-1">
@@ -142,13 +146,13 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
               .map((sector, index) => (
                 <span
                   key={index}
-                  className="inline-block px-1.5 py-0.5 bg-blue-50 text-blue-700 text-xs rounded font-medium"
+                  className="inline-block px-1 sm:px-1.5 py-0.5 bg-blue-50 text-blue-700 text-xs rounded font-medium"
                 >
                   {sector}
                 </span>
               ))}
             {institution.targetedPrivateSector.split(", ").length > 1 && (
-              <span className="inline-block px-1.5 py-0.5 bg-gray-50 text-gray-600 text-xs rounded font-medium">
+              <span className="inline-block px-1 sm:px-1.5 py-0.5 bg-gray-50 text-gray-600 text-xs rounded font-medium">
                 +{institution.targetedPrivateSector.split(", ").length - 1} more
               </span>
             )}
@@ -156,8 +160,8 @@ export default function InstitutionCard({ institution }: InstitutionCardProps) {
         </div>
 
         {/* Financing Type - More compact */}
-        <div className="mb-4">
-          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
+        <div className="mb-3 sm:mb-4">
+          <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 sm:mb-1.5">
             Financing Type
           </h4>
           <p className="text-xs text-gray-700 font-medium line-clamp-2">

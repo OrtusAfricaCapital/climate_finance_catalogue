@@ -44,11 +44,11 @@ export default function Home() {
       {/* Green Header */}
       <header className="bg-green-900 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center h-24 py-4">
-            <h1 className="text-3xl font-bold text-white mb-2">
+          <div className="flex flex-col items-center justify-center h-20 sm:h-24 py-4">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2 text-center">
               Uganda Climate Finance Catalogue
             </h1>
-            <p className="text-orange-100 text-lg font-medium">
+            <p className="text-orange-100 text-base sm:text-lg font-medium text-center px-4">
               Connecting the Private Sector to Climate Finance Opportunities in
               Uganda
             </p>
@@ -57,16 +57,16 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Introduction Section with Search */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl shadow-md p-8 mb-10">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl shadow-md p-4 sm:p-6 lg:p-8 mb-8 sm:mb-10">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8">
             {/* Left: Icon + Text */}
             <div className="flex-1 flex items-start gap-4">
               {/* Icon */}
               <div className="hidden md:block">
                 <svg
-                  className="w-16 h-16 text-green-500"
+                  className="w-12 h-12 lg:w-16 lg:h-16 text-green-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 48 48"
@@ -78,12 +78,12 @@ export default function Home() {
               </div>
               {/* Text */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-2">
                   Discover{" "}
                   <span className="text-green-600">Climate Finance</span>{" "}
                   Opportunities
                 </h2>
-                <p className="text-lg text-gray-600">
+                <p className="text-base sm:text-lg text-gray-600">
                   Explore a comprehensive catalogue of climate finance
                   institutions, facilities, and opportunities available to the
                   private sector in Uganda. Find the right partner for your
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
             {/* Right: Search/Filter */}
-            <div className="w-full md:w-[420px] bg-white rounded-xl shadow p-6 flex flex-col gap-4 border border-green-100">
+            <div className="w-full lg:w-[420px] bg-white rounded-xl shadow p-4 sm:p-6 flex flex-col gap-4 border border-green-100">
               <SearchFilter
                 onSearch={handleSearch}
                 onFilterChange={handleFilterChange}
@@ -104,8 +104,8 @@ export default function Home() {
         </div>
 
         {/* Search Results Info */}
-        <div className="mb-8 text-center">
-          <div className="inline-flex items-center bg-blue-50 text-blue-800 px-4 py-2 rounded-lg">
+        <div className="mb-6 sm:mb-8 text-center">
+          <div className="inline-flex items-center bg-blue-50 text-blue-800 px-3 sm:px-4 py-2 rounded-lg text-sm sm:text-base">
             <svg
               className="w-4 h-4 mr-2"
               fill="none"
@@ -139,17 +139,17 @@ export default function Home() {
 
         {/* Institutions Grid */}
         {filteredInstitutions.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {filteredInstitutions.map((institution) => (
               <InstitutionCard key={institution.id} institution={institution} />
             ))}
           </div>
         ) : (
           /* No Results Message */
-          <div className="text-center py-12">
+          <div className="text-center py-8 sm:py-12">
             <div className="max-w-md mx-auto">
               <svg
-                className="w-16 h-16 mx-auto text-gray-400 mb-4"
+                className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-gray-400 mb-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -164,13 +164,13 @@ export default function Home() {
               <h3 className="text-lg font-medium text-gray-900 mb-2">
                 No institutions found
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 text-sm sm:text-base">
                 No institutions match your search criteria. Try adjusting your
                 search terms or filters.
               </p>
               <button
                 onClick={handleClearAll}
-                className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
+                className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200 text-sm sm:text-base"
               >
                 <svg
                   className="w-4 h-4 mr-2"
