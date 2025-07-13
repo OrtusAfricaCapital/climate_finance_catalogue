@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface FooterProps {
   onSearch: (query: string) => void;
@@ -172,9 +173,12 @@ export default function Footer({
               © 2024 Uganda Climate Finance Catalogue. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6 text-xs sm:text-sm text-gray-600">
-              <a href="#" className="hover:text-green-600 transition-colors">
+              <Link
+                href="/privacy-policy"
+                className="hover:text-green-600 transition-colors"
+              >
                 Privacy Policy
-              </a>
+              </Link>
               <a href="#" className="hover:text-green-600 transition-colors">
                 Terms of Service
               </a>
