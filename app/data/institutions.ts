@@ -1432,6 +1432,29 @@ export const institutions: Institution[] = [
     phoneNumber: "",
     attachments: "",
   },
+  {
+    id: "the-dfcd",
+    name: "THE DFCD",
+    facilityName: "The Dutch Fund for Climate and Development",
+    yearEstablished: "2019",
+    currentStatus: "Operational",
+    logo: "https://i.postimg.cc/75F3ftkW/DFCD.png",
+    overview:
+      "The lead organisation receiving funding should be a private sector entity and have total value of assets or annual turnover of at least €5 million.",
+    focusAreas: "Climate",
+    targetedPrivateSector: "Startups, SMEs",
+    financingType: "Grant",
+    typicalTicketSize: "-",
+    accessProcess: "Pitch to DFCD",
+    successStories: "Impacted over 86 countries",
+    website: "https://www.thedfcd.com/",
+    contactPerson: "Head, Innovations",
+    position: "Customer Care",
+    email: "info@thedfcd.com",
+    phoneNumber: "",
+    attachments:
+      "https://forms.monday.com/forms/9d83648810fe3f8008c9e2a31b9aaef8?r=euc1",
+  },
 ];
 
 export function getInstitutionById(id: string): Institution | undefined {

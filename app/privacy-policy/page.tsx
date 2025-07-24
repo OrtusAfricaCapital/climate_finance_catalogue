@@ -107,8 +107,8 @@ export default function PrivacyPolicy() {
                         1. Introduction
                       </h2>
                       <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                        The Uganda Climate Finance Catalogue (&ldquo;we,&rdquo;
-                        &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to
+                        The Uganda Climate Finance Catalogue (&quot;we,&quot;
+                        &quot;our,&quot; or &quot;us&quot;) is committed to
                         protecting your privacy. This Privacy Policy explains
                         how we collect, use, disclose, and safeguard your
                         information when you visit our website and use our
@@ -695,7 +695,7 @@ export default function PrivacyPolicy() {
                           reflect changes in our practices or applicable laws.
                           We will notify you of any material changes by posting
                           the updated policy on our website and updating the
-                          &ldquo;Last updated&rdquo; date.
+                          &quot;Last updated&quot; date.
                         </p>
                       </div>
                     </div>
